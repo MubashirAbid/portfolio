@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3f0c3;
+    color: #6fe9a6;
+    line-height: 1.6;
+}
+
+p {
+    color: #022e05;
+}
+header {
+    background-color: #144e36;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #addfff;
+}
+
+.home {
+    min-height: 75vh;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background-color: #e1f2ff;
+}
+
+.home-text {
+    max-width: 550px;
+}
+
+.home h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.home h1 span {
+    color: #04570f;
+}
+
+.home h3 {
+    color: #073a20;
+    margin-bottom: 15px;
+}
+
+.home p {
+    margin-bottom: 20px;
+    color: #19a54f;
+}
+
+.button {
+    display: inline-block;
+    background-color: #144e2e;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0b3015;
+}
+
+.profile {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #0d9109;
+}
+
+section:not(.home) {
+    padding: 45px 8%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #02310d;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    margin: 15px auto;
+    max-width: 650px;
+    border: 1px solid #c5e5fa;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #094b04;
+    margin-bottom: 8px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills .card {
+    margin: 0;
+    min-width: 150px;
+    text-align: center;
+    color: #04531c;
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-card a {
+    color: #022e05;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #91bd9b;
+    color: rgb(75, 236, 60);
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 6%;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .profile {
+        width: 180px;
+        height: 180px;
+    }
+
+    section:not(.home) {
+        padding: 35px 6%;
+    }
+}
